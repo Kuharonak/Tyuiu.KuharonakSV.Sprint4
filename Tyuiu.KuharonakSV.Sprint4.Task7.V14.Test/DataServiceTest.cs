@@ -8,10 +8,11 @@ namespace Tyuiu.KuharonakSV.Sprint4.Task7.V14.Test
         public void ValidCalculate()
         {
             DataService ds = new DataService();
-            int n = 3;
-            int m = 4;
+            int rows = 3;
+            int columns = 4;
+            int[,] matrix = new int[rows, columns];
             string value = "458712659137";
-            int res = ds.Calculate(n, m, value);
+            int res = ds.Calculate(rows, columns, value);
             int wait = 38;
             Assert.AreEqual(wait, res);
         }

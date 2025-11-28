@@ -19,15 +19,15 @@ internal class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                                                           *");
         Console.WriteLine("**************************************************************************************************************");
 
-        int n = 3;
-        int m = 4;
+        int rows = 3;
+        int columns = 4;
         int index = 0;
         string str = "458712659137";
-        int[,] array = new int[n, m];
+        int[,] array = new int[rows, columns];
         Console.WriteLine("\nМассив:");
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < rows; i++)
         {
-            for (int j = 0; j < m; j++)
+            for (int j = 0; j < columns; j++)
             {
                 Console.Write($"{str[index]} \t");
                 index++;
@@ -38,7 +38,7 @@ internal class Program
         Console.WriteLine("* Результат:                                                                                                 *");
         Console.WriteLine("**************************************************************************************************************");
         Console.WriteLine("Сумма нечетных элементов массива: ");
-        int res = ds.Calculate(n, m, str);
+        int res = ds.Calculate(rows, columns, str);
         Console.WriteLine(res);
         Console.ReadKey();
     }
